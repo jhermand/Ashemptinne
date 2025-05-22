@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Étape de l'aventure</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fffbee;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 120px; /* pour éviter le chevauchement du bouton */
+    }
+
+    .image-illustration {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      margin-top: 10px;
+      border-radius: 12px;
+    }
+
+    .contenu {
+      padding: 20px;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    .solution {
+      background: #f3f3f3;
+      border-radius: 12px;
+      padding: 15px;
+      margin-top: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .indice-flottant {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .indice-flottant button {
+      background: #ffd966;
+      border: 2px solid #d4af37;
+      border-radius: 10px;
+      padding: 12px 16px;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .indice-contenu {
+      display: none;
+      background: #fff3c4;
+      border: 2px dashed #d4af37;
+      border-radius: 10px;
+      padding: 15px;
+      margin-top: 20px;
+      max-width: 500px;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="images/zaza.png" alt="Illustration de l'étape" class="image-illustration" />
+
+  <div class="contenu">
+    <h1>Étape 3 : Le chant du ruisseau</h1>
+    <p>
+      Zaza entend un doux murmure… Le ruisseau chante, et une énigme flotte dans l’air !<br>
+      Pour passer à l’étape suivante, résous la charade...
+    </p>
+
+    <div id="indice" class="indice-contenu">
+      🔍 <strong>Indice :</strong> Ce que tu cherches est tout près de l’eau… ouvre l’œil autour du pont !
+    </div>
+
+    <div class="solution">
+      <h3>La solution :</h3>
+      <p>Tu as trouvé ? Scanne vite le prochain QR code !</p>
+      <!-- Tu peux ajouter un champ de réponse ici si besoin -->
+    </div>
+  </div>
+
+  <div class="indice-flottant">
+    <button onclick="document.getElementById('indice').style.display = 'block'; this.style.display='none';">
+      Besoin d’un indice ?
+    </button>
+  </div>
+
+</body>
+</html>
