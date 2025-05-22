@@ -1,6 +1,13 @@
 function checkCode(step) {
     const input = document.getElementById('codeInput').value.trim().toUpperCase();
-    const expected = "";
+    if (input === "") {
+        const success = document.getElementById('success-message');
+        const error = document.getElementById('error-message');
+        success.style.display = "none";
+        error.style.display = "none";
+        return;
+    }
+    let expected = "";
     switch (step) {
     case 1:
         expected = "LIVRE";
@@ -12,14 +19,14 @@ function checkCode(step) {
         expected = "LIVRE";
         break;
     case 4:
-        expected = "LIVRE";
+        expected = "La soile";
         break;
     case 5:
         expected = "LIVRE";
         break;
     }
-    const success = document.getElementById('successMessage');
-    const error = document.getElementById('errorMessage');
+    const success = document.getElementById('success-message');
+    const error = document.getElementById('error-message');
 
     if (input === expected) {
       success.style.display = "block";
