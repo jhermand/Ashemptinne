@@ -18,7 +18,7 @@ body {
     border-radius: 12px;
   }
 
-  .contenu {
+  #contenu {
     padding: 20px;
     max-width: 600px;
     text-align: center;
@@ -57,7 +57,7 @@ body {
     border-radius: 10px;
     padding: 15px;
     margin-top: 20px;
-    max-width: 500px;
+
   }
 
   img {
@@ -66,12 +66,12 @@ body {
     margin-bottom: 5px;
   }
 
-  .story {
+  #story {
     text-align: justify;
     font-size: 1.05em;
     line-height: 1.25em;
-    padding: 10px;
-    background-color: rgb(255, 251, 238);
+    padding: 10px 10px 20px 10px;
+    background-color: rgb(255, 255, 255);
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
@@ -95,7 +95,7 @@ body {
 #error-message, #success-message {
     display: none;
     margin-top: 20px;
-    font-size: 1.2em;
+    font-size: 1.1em;
     padding: 10px;
     font-weight: bold;
   }
@@ -125,13 +125,14 @@ body {
     font-size: 16px;
   }
 
-  ul {
+  #enigme {
     list-style-type: none;
     text-align: left;
     padding: 10px;
-    background-color: rgb(238, 241, 255);
+    background-color: rgb(238, 255, 238);
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 20px;
   }
 
   li {

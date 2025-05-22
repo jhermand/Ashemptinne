@@ -8,20 +8,20 @@ function checkCode(step) {
         error.style.display = "none";
     } else {
         switch (step) {
-            case 1:
-                expected = "LIVRE";
-                break;
             case 2:
                 expected = "LIVRE";
                 break;
             case 3:
-                expected = "LIVRE";
+                expected = "FLEUR";
                 break;
             case 4:
                 expected = "LA SOILE";
                 break;
             case 5:
-                expected = "LIVRE";
+                expected = "LES PETITES ABEILLES";
+                break;
+            case 6:
+                expected = "691";
                 break;
             }
         const success = document.getElementById('success-message');

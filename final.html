@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Étape de l'aventure</title>
+  <link rel="stylesheet" href="style/style.css" />
+  <script type="text/javascript" src="script/script.js"></script>
+</head>
+<body>
+    <img src="style/images/zaza.png" alt="les aventures de Zaza" />
+  <div id="contenu">
+    <div id="story">
+        <h4>🐝 Le grand réveil :</h4>
+        Zaza verse les 5 gouttes dans une fleur magique devant la ruche… Un grand rayon de soleil jaillit et les abeilles se réveillent une à une ! Leur reine, encore un peu endormie, murmure :
+« Tu as été courageuse… mais il reste une dernière épreuve pour devenir gardienne de la ruche. »
+
+    </div>
+
+    <div id="enigme">   
+        <h4>🎯 Épreuve finale :</h4>
+        <li>🐝 Zaza a trouvé une tablette ancienne dans la ruche... mais pour l’ouvrir, il faut entrer un code à 3 chiffres.</li>
+        <li>Une suite de symboles l’accompagne :</li>
+        <li>🐝 = 3 🌸 = 5 🍯 = 2</li> 
+        <li>Voici l’énigme gravée dessus :</li>
+        <li>🐝 + 🌸 - 🍯 = ?</li>
+        <li>🌸 + 🍯 + 🍯 = ?</li>
+        <li>🐝 + 🐝 - 🌸 = ?</li>
+    </div>
+
+    <div id="indice" class="indice-contenu">
+      🔍 <strong>Indice :</strong> 3 + 5 - 2 | 5 + 2 + 2 | 3 + 3 - 5
+    </div>
+
+    <div id="solution">
+      <div>
+        <h4>🔐 Trouve le bon code pour découvrir la fin de l’aventure !</h4>
+        <input id="codeInput" type="text" placeholder="Entre le code secret ici" />
+        <br><br>
+        <button onclick="checkCode(6)">
+        Valider
+        </button>
+      </div>
+      <div id="success-message">
+        🎉 Bravo, petit aventurier !
+  <p>
+    Tu as aidé Zaza à sauver sa ruche, traversé chaque étape avec courage, et résolu toutes les énigmes 🧠✨
+  </p>
+  <p>
+    Merci d’avoir participé à cette aventure ! J’espère que tu t’es bien amusé et que tu es fier de ton parcours 🐝🌼
+  </p>
+  <p>
+    Maintenant… il te reste une dernière mission : <strong>trouver ta récompense</strong> 🎁
+  </p>
+  <p style="font-size: 1.2em; font-weight: bold;">
+    Elle t’attend à l’endroit suivant : <br>
+    <em>👉 <span style="color: #b8860b;">[endroit à définir]</span></em>
+  </p>
+  <p>
+    Bonne chance et… à bientôt pour une nouvelle aventure !
+  </p>
+      </div>
+      <div id="error-message">
+        ❌ Hmm… ce n’est pas encore ça !<br>
+        Réessaie ou lis bien l’indice pour t’aider 🕵️‍♂️
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="indice-flottant">
+    <button onclick="document.getElementById('indice').style.display = 'block'; this.style.display='none';">
+      Besoin d’un indice ?
+    </button>
+  </div>
+
+</body>
+</html>
