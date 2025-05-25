@@ -6,10 +6,17 @@
   <title>Étape de l'aventure</title>
   <link rel="stylesheet" href="style/style.css" />
   <script type="text/javascript" src="script/script.js"></script>
+  <script type="text/javascript">
+    name = localStorage.getItem("name");
+    if (name == 'null' || name == null) {
+        window.location.href = "index.html";
+    }
+  </script>
 </head>
 <body>
     <img src="style/images/zaza.png" alt="les aventures de Zaza" />
   <div id="contenu">
+    Hello <script>document.write(localStorage.getItem("name"))</script> !<br>
     <div id="story">
         <h4>🐝 Sous les larmes du vieil arbre :</h4>
         Zaza s’envole vers l’arbre géant. Sous ses longues branches, elle entend un bourdonnement étrange… Un bourdon ronchon garde la première goutte de nectar !
@@ -39,7 +46,7 @@
       </div>
       <div id="success-message">
         🎉 Bravo ! Tu as percé le secret du bourdon !<br>
-        Bravo ! Le bourdon grogne mais te donne la première goutte. Il t’indique de chercher un lieu où les enfants s’installent pour manger en groupe. Direction le prochain QR !
+        Le bourdon grogne mais te donne la première goutte. Il t’indique de chercher un lieu où les enfants s’installent pour manger en groupe.
         <br><br>
             ➡️ Va scanner le prochain QR code ! 🐝
       </div>

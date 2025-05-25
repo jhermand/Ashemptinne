@@ -6,10 +6,17 @@
   <title>Étape de l'aventure</title>
   <link rel="stylesheet" href="style/style.css" />
   <script type="text/javascript" src="script/script.js"></script>
+  <script type="text/javascript">
+    name = localStorage.getItem("name");
+    if (name == 'null' || name == null) {
+        window.location.href = "index.html";
+    }
+  </script>
 </head>
 <body>
     <img src="style/images/zaza.png" alt="les aventures de Zaza" />
   <div id="contenu">
+    Hello <script>document.write(localStorage.getItem("name"))</script> !<br>
     <div id="story">
         <h4>🐝 Le chant du ruisseau :</h4>
         L’eau clapote doucement. Zaza entend un drôle d’écho : « Je suis un mot secret ! Attrape-moi ! »
@@ -39,7 +46,7 @@
       </div>
       <div id="success-message">
         🎉 Bravo, une troisième goutte est à toi !<br> Un crapaud t’indique un sentier mystérieux…<br> Il dit : « C’est un chemin qui ne va nulle part, mais on y trouve des trésors si on est curieux… »
-
+(Ajouter passer derrière le module)
 <br><br>
         <br><br>
             ➡️ Va scanner le prochain QR code ! 🐝

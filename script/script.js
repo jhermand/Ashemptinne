@@ -37,3 +37,26 @@ function checkCode(step) {
     
     
   }
+
+  function storeName(prenom) {
+    console.debug(prenom);
+    if (prenom !== "") {
+        localStorage.setItem('name', prenom);
+        document.getElementById('start').style.display = "block"; // Clear the input field
+    }
+  }
+
+  function displayName() {
+    const name = localStorage.getItem('name');
+    if (name) {
+        const nameDisplay = document.getElementById('nameDisplay');
+        nameDisplay.textContent = `Bonjour ${name}`;
+        nameDisplay.style.display = "block";
+    }
+  }
+
+    function clearName() {  
+        localStorage.removeItem('name');
+    }
+
+   

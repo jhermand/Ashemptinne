@@ -6,10 +6,19 @@
   <title>Étape de l'aventure</title>
   <link rel="stylesheet" href="style/style.css" />
   <script type="text/javascript" src="script/script.js"></script>
+  <script type="text/javascript">
+      name = localStorage.getItem("name");
+      if (name == 'null' || name == null) {
+          window.location.href = "index.html";
+      } else {
+          clearName();
+      }
+   </script>
 </head>
 <body>
     <img src="style/images/zaza.png" alt="les aventures de Zaza" />
   <div id="contenu">
+    Hello <script>document.write(localStorage.getItem("name"))</script> !<br>
     <div id="story">
         <h4>🐝 Le grand réveil :</h4>
         Zaza verse les 5 gouttes dans une fleur magique devant la ruche… Un grand rayon de soleil jaillit et les abeilles se réveillent une à une ! Leur reine, encore un peu endormie, murmure :
@@ -42,7 +51,7 @@
         </button>
       </div>
       <div id="success-message">
-        🎉 Bravo, petit aventurier !
+        🎉 Bravo, <script>document.write(localStorage.getItem("name"))</script> !
   <p>
     Tu as aidé Zaza à sauver sa ruche, traversé chaque étape avec courage, et résolu toutes les énigmes 🧠✨
   </p>

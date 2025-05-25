@@ -6,10 +6,17 @@
   <title>Étape de l'aventure</title>
   <link rel="stylesheet" href="style/style.css" />
   <script type="text/javascript" src="script/script.js"></script>
+  <script type="text/javascript">
+    name = localStorage.getItem("name");
+    if (name == 'null' || name == null) {
+        window.location.href = "index.html";
+    }
+    </script>
 </head>
 <body>
     <img src="style/images/zaza.png" alt="les aventures de Zaza" />
   <div id="contenu">
+    Hello <script>document.write(localStorage.getItem("name"))</script> !<br>
     <div id="story">
         <h4>🐝 Le réveil de Zaza :</h4>
         Bonjour petit aventurier !<br>
