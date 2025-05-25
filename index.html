@@ -78,6 +78,7 @@
             fetch("https://script.google.com/macros/s/AKfycbzsrJP_tFKF1K-PixbvblRBGN5girUtS-3Ru1wDkEgLHROrQdMad62wDDWwINxdcX82Dg/exec", {
             method: "POST",
             body: JSON.stringify({ prenom }),
+            mode: "cors",
             headers: {
                 "Content-Type": "application/json"
             }
