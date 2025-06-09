@@ -138,3 +138,9 @@ body {
   li {
     margin: 10px 0;
   }
+
+  em {
+    padding-left : 5px;
+    border-left : 2px solid #d4af37;
+    display : block
+  }
